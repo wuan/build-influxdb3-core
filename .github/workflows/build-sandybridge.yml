@@ -7,12 +7,12 @@ on:
     tags:
       - 'v*'
     paths:
-      - build-sandybridge.yml
+      - .github/workflows/build-sandybridge.yml
       - ../../influxdb-sandybridge.patch
   pull_request:
     branches: [ "main" ]
     paths:
-      - build-sandybridge.yml
+      - .github/workflows/build-sandybridge.yml
       - ../../influxdb-sandybridge.patch
 
 permissions:

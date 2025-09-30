@@ -7,12 +7,12 @@ on:
     tags:
       - 'v*'
     paths:
-      - build-nehalem.yml
+      - .github/workflows/build-nehalem.yml
       - ../../influxdb-nehalem.patch
   pull_request:
     branches: [ "main" ]
     paths:
-      - build-nehalem.yml
+      - .github/workflows/build-nehalem.yml
       - ../../influxdb-nehalem.patch
 
 permissions:
