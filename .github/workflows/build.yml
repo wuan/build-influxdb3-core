@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: influxdb3-core-sandybridge
+      IMAGE_NAME: wuan/influxdb3-core-sandybridge
     permissions:
       contents: read
       packages: write
