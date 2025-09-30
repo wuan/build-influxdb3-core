@@ -1,4 +1,4 @@
-name: Build
+name: Build for Nehalem
 
 on:
   workflow_dispatch:
