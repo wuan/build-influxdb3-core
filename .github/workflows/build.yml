@@ -80,10 +80,7 @@ jobs:
         uses: docker/build-push-action@1dc73863535b631f98b2378be8619f83b136f4a0
         with:
           context: influxdb
-          build-args:
-            - "PBS_DATE=20250106"
-            - "PBS_VERSION=3.11.11"
-            - "PBS_TARGET=x86_64-unknown-linux-gnu"
+          build-args: "PBS_DATE=20250106 PBS_VERSION=3.11.11 PBS_TARGET=x86_64-unknown-linux-gnu"
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
