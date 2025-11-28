@@ -43,11 +43,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      - name: Checkout InfluxDB repository
+      - name: Checkout InfluxDB repository (${{ github.ref_name }})
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: "influxdata/influxdb"
-          ref: "v3.5.0"
+          ref: ${{ github.ref_name }}
           path: "influxdb"
 
       - name: Apply patch
